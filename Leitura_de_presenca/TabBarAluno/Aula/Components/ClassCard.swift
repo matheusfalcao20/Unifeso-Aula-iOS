@@ -34,9 +34,6 @@ struct ClassCard: View {
             .padding()
             .foregroundColor(.white)
         }
-        
-       
-        
     }
 }
 
