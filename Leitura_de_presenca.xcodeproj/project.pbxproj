@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B5F1F3A2C4C4122008EA1F2 /* ClassroumCardUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5F1F392C4C4122008EA1F2 /* ClassroumCardUIView.swift */; };
+		6B5F1F3D2C4C4738008EA1F2 /* ListClassrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5F1F3C2C4C4738008EA1F2 /* ListClassrom.swift */; };
 		6BBBCF052C4BE612003447AC /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 6BBBCF042C4BE612003447AC /* Readme.md */; };
 		6BBBCF092C4BF513003447AC /* ClassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBBCF082C4BF513003447AC /* ClassCard.swift */; };
 		6BBBCF0C2C4BFF6C003447AC /* ClassModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBBCF0B2C4BFF6C003447AC /* ClassModel.swift */; };
@@ -61,6 +63,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B5F1F392C4C4122008EA1F2 /* ClassroumCardUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassroumCardUIView.swift; sourceTree = "<group>"; };
+		6B5F1F3C2C4C4738008EA1F2 /* ListClassrom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListClassrom.swift; sourceTree = "<group>"; };
 		6BBBCF042C4BE612003447AC /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		6BBBCF082C4BF513003447AC /* ClassCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCard.swift; sourceTree = "<group>"; };
 		6BBBCF0B2C4BFF6C003447AC /* ClassModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassModel.swift; sourceTree = "<group>"; };
@@ -126,6 +130,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B5F1F382C4C40C8008EA1F2 /* ComponetsAdicionarAula */ = {
+			isa = PBXGroup;
+			children = (
+				6B5F1F392C4C4122008EA1F2 /* ClassroumCardUIView.swift */,
+			);
+			path = ComponetsAdicionarAula;
+			sourceTree = "<group>";
+		};
+		6B5F1F3B2C4C46F4008EA1F2 /* ApiAdicionarAula */ = {
+			isa = PBXGroup;
+			children = (
+				6B5F1F3C2C4C4738008EA1F2 /* ListClassrom.swift */,
+			);
+			path = ApiAdicionarAula;
+			sourceTree = "<group>";
+		};
 		6BBBCF062C4BF4EF003447AC /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,6 +318,8 @@
 		9F3E65BE2C4B3FBF00ABA542 /* AulasProfessor */ = {
 			isa = PBXGroup;
 			children = (
+				6B5F1F3B2C4C46F4008EA1F2 /* ApiAdicionarAula */,
+				6B5F1F382C4C40C8008EA1F2 /* ComponetsAdicionarAula */,
 				9F3E65BC2C4B3FBF00ABA542 /* AdicionarAulaView.swift */,
 				9F3E65BD2C4B3FBF00ABA542 /* AulaProfessorView.swift */,
 			);
@@ -502,10 +524,12 @@
 				9F3E65D62C4B3FBF00ABA542 /* TurmasView.swift in Sources */,
 				9F3E65B52C4B3FAC00ABA542 /* User.swift in Sources */,
 				9F3E65CD2C4B3FBF00ABA542 /* AulaView.swift in Sources */,
+				6B5F1F3D2C4C4738008EA1F2 /* ListClassrom.swift in Sources */,
 				9F3E65B22C4B3FAC00ABA542 /* ServerResponse.swift in Sources */,
 				6BBBCF092C4BF513003447AC /* ClassCard.swift in Sources */,
 				9F3E65B32C4B3FAC00ABA542 /* UserAPI.swift in Sources */,
 				9F3E65D92C4B3FBF00ABA542 /* CustomNavigationLink.swift in Sources */,
+				6B5F1F3A2C4C4122008EA1F2 /* ClassroumCardUIView.swift in Sources */,
 				9F3E65B42C4B3FAC00ABA542 /* DAOUser.swift in Sources */,
 				9F3E65D22C4B3FBF00ABA542 /* PerfilProfessorView.swift in Sources */,
 				9F3E65D12C4B3FBF00ABA542 /* AulaProfessorView.swift in Sources */,
