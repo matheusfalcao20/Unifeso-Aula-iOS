@@ -42,6 +42,12 @@ struct AdicionarAulaView: View {
         }.onAppear {
             get_class_room()
         }
+        Fab(
+            callback: {
+                createAulaAPI(token: "token 6b68a2f1f5348c141c37cecd8b7f4831776bd92a", id_teacher: 1)
+                get_class_room()
+            }
+        )
     }
 }
 
