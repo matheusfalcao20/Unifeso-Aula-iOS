@@ -6,10 +6,33 @@
 //
 
 import SwiftUI
+import VisionKit
 
 struct AulaView: View {
+    @State var isShowingScanner = true
+    @State private var scannedText = ""
+        
+    
     var body: some View {
         VStack {
+//            if DataScannerViewController.isSupported && DataScannerViewController.isAvailable {
+//                ZStack(alignment: .bottom) {
+//                    DataScannerRepresentable(
+//                        shouldStartScanning: $isShowingScanner,
+//                        scannedText: $scannedText,
+//                        dataToScanFor: [.barcode(symbologies: [.qr])]
+//                    )
+//                    
+//                    Text(scannedText)
+//                        .padding()
+//                        .background(Color.white)
+//                        .foregroundColor(.black)
+//                }
+//            } else if !DataScannerViewController.isSupported {
+//                Text("It looks like this device doesn't support the Camera")
+//            } else {
+//                Text("It appears your camera may not be available")
+//            }
             Text("Suas aulas")
                 .font(.title2)
                 .fontWeight(.semibold)
