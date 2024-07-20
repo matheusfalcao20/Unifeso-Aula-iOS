@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 struct PerfilView: View {
     
@@ -14,17 +15,32 @@ struct PerfilView: View {
     @State private var alertMessage = ""
     @State private var isLoading = false
     @State private var nextScreen = false
+    @State private var pickerItem: PhotosPickerItem? // item opcional que você usa com um seletor de fotos
+    @State private var selectedImage: Image? // exibe uma imagem
     
     var body: some View {
         NavigationStack {
             VStack {
-                Image(systemName: "person.circle.fill")
+                selectedImage?
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 80, height: 80)
-                    .foregroundColor(.gray)
+                    .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                    .frame(width: 150)
                 
-                Text("nome sobrenome")
+                Button {
+                    
+
+                } label: {
+                    PhotosPicker("Selecionar foto", selection: $pickerItem, matching: .images)
+                        .foregroundStyle(.gray).font(.footnote).padding(.top, 10)
+                }
+                .onChange(of: pickerItem) { // dispara um efeito colateral quando um valor muda
+                    Task {
+                        selectedImage = try await pickerItem?.loadTransferable(type: Image.self)
+                    }
+                }
+                
+                Text(LoggedUser.sharedInstance.user.name) // 
                     .font(.footnote)
                     .padding(.vertical, 30)
                 
