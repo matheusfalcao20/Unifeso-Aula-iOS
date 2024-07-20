@@ -10,6 +10,7 @@ import SwiftUI
 struct ClassCard: View {
     var className: String
     var classTime: String
+    var hasPresence = false
     
     var body: some View {
         RoundedRectangle(cornerRadius: 8)
@@ -25,6 +26,10 @@ struct ClassCard: View {
                         .font(.subheadline)
                 }
                 Spacer()
+                if hasPresence {
+                    Image(systemName: "checkmark.circle.fill")
+                        .font(.title2)
+                }
             }
             .padding()
             .foregroundColor(.white)
