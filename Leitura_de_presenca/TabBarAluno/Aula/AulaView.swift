@@ -9,7 +9,14 @@ import SwiftUI
 
 struct AulaView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Suas aulas")
+                .font(.title2)
+                .fontWeight(.semibold)
+            Spacer()
+            ScrollView {}
+        }
+        .padding()
     }
 }
 
