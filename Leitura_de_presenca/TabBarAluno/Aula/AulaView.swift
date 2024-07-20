@@ -13,6 +13,13 @@ struct AulaView: View {
     @State private var scannedText = ""
         
     
+    init() {
+        list_classes(token: "token 72676edc7e28b924083c19cc4c8ee2ebf983604f") { res in
+                print(res)
+        }
+    }
+    
+    
     var body: some View {
         VStack {
 //            if DataScannerViewController.isSupported && DataScannerViewController.isAvailable {
