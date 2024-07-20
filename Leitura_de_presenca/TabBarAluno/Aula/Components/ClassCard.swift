@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ClassCard: View {
-    var className: String
-    var classTime: String
-    var hasPresence = false
+    @State var className: String
+    @State var classTime: String
+    @State var hasPresence = false
     
     var body: some View {
         RoundedRectangle(cornerRadius: 8)

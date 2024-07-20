@@ -7,8 +7,3 @@ struct StudentClassModel: Hashable {
 }
 
 
-var classes: [StudentClassModel] = [
-    StudentClassModel(title: "Banco de dados", time: "19:00 - 21/09/2024", hasPresence: true),
-    StudentClassModel(title: "Cálculo II", time: "19:00 - 20/09/2024", hasPresence: false),
-    StudentClassModel(title: "Cálculo II", time: "19:00 - 27/09/2024", hasPresence: false)
-]

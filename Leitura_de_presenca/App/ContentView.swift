@@ -39,7 +39,6 @@ struct ContentView: View {
                         .frame(width: 200)
                 }
                     
-                    
                     if selectedSou == Sou.Aluno{
                         CustomTextField(placeholder: "Matricula", padding: 10, text: $matricula, textColor: .gray, borderColor: Color(red: 18/255, green: 126/255, blue: 113/255), frameWidht: 300, frameHeight: 40)
                         

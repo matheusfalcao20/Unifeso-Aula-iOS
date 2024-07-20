@@ -11,14 +11,13 @@ import VisionKit
 struct AulaView: View {
     @State var isShowingScanner = true
     @State private var scannedText = ""
+    @State private var classes: [StudentClassModel] = []
         
-    
-    init() {
-        list_classes(token: "token 72676edc7e28b924083c19cc4c8ee2ebf983604f") { res in
-                print(res)
+    func getListStudents() {
+        list_classes(token: "token 72676edc7e28b924083c19cc4c8ee2ebf983604f") { [self]res in
+            classes = res
         }
     }
-    
     
     var body: some View {
         VStack {
@@ -67,6 +66,9 @@ struct AulaView: View {
                     .stroke(.feso, lineWidth: 2)
             }
             
+        }
+        .onAppear {
+            getListStudents()
         }
         .padding()
     }

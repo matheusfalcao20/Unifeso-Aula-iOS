@@ -13,6 +13,7 @@
 		6BBBCF102C4C1E23003447AC /* DataScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBBCF0F2C4C1E23003447AC /* DataScanner.swift */; };
 		6BBBCF142C4C2637003447AC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6BBBCF132C4C2637003447AC /* Alamofire */; };
 		6BBBCF172C4C269C003447AC /* ListClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBBCF162C4C269C003447AC /* ListClasses.swift */; };
+		6BBBCF1A2C4C410A003447AC /* ConvertTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBBCF192C4C410A003447AC /* ConvertTime.swift */; };
 		9F3E657B2C4B3F6D00ABA542 /* Leitura_de_presencaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3E657A2C4B3F6D00ABA542 /* Leitura_de_presencaApp.swift */; };
 		9F3E657D2C4B3F6D00ABA542 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3E657C2C4B3F6D00ABA542 /* ContentView.swift */; };
 		9F3E657F2C4B3F6F00ABA542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F3E657E2C4B3F6F00ABA542 /* Assets.xcassets */; };
@@ -67,6 +68,7 @@
 		6BBBCF0F2C4C1E23003447AC /* DataScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataScanner.swift; sourceTree = "<group>"; };
 		6BBBCF112C4C1EE7003447AC /* Leitura-de-presenca-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Leitura-de-presenca-Info.plist"; sourceTree = SOURCE_ROOT; };
 		6BBBCF162C4C269C003447AC /* ListClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListClasses.swift; sourceTree = "<group>"; };
+		6BBBCF192C4C410A003447AC /* ConvertTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertTime.swift; sourceTree = "<group>"; };
 		9F3E65772C4B3F6D00ABA542 /* Leitura_de_presenca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Leitura_de_presenca.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F3E657A2C4B3F6D00ABA542 /* Leitura_de_presencaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leitura_de_presencaApp.swift; sourceTree = "<group>"; };
 		9F3E657C2C4B3F6D00ABA542 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -149,6 +151,14 @@
 				6BBBCF162C4C269C003447AC /* ListClasses.swift */,
 			);
 			path = Api;
+			sourceTree = "<group>";
+		};
+		6BBBCF182C4C40EE003447AC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6BBBCF192C4C410A003447AC /* ConvertTime.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		9F3E656E2C4B3F6D00ABA542 = {
@@ -269,6 +279,7 @@
 		9F3E65B72C4B3FBE00ABA542 /* Aula */ = {
 			isa = PBXGroup;
 			children = (
+				6BBBCF182C4C40EE003447AC /* Utils */,
 				6BBBCF152C4C2651003447AC /* Api */,
 				6BBBCF0A2C4BFF52003447AC /* Models */,
 				6BBBCF062C4BF4EF003447AC /* Components */,
@@ -494,6 +505,7 @@
 				9F3E657D2C4B3F6D00ABA542 /* ContentView.swift in Sources */,
 				6BBBCF0C2C4BFF6C003447AC /* ClassModel.swift in Sources */,
 				9F3E65CE2C4B3FBF00ABA542 /* PerfilView.swift in Sources */,
+				6BBBCF1A2C4C410A003447AC /* ConvertTime.swift in Sources */,
 				9F3E65DA2C4B3FBF00ABA542 /* CustomSecureField.swift in Sources */,
 				9F3E65D32C4B3FBF00ABA542 /* AdicionarAlunoTurmaView.swift in Sources */,
 				9F3E65B02C4B3FAC00ABA542 /* API.swift in Sources */,
