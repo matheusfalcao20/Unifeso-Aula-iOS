@@ -25,6 +25,18 @@ struct AulaView: View {
                     }
                 }
             }
+            Button (action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                Text("Ler presença")
+                    .fontWeight(.semibold)
+            })
+            .foregroundColor(.feso)
+            .padding(.vertical, 10)
+            .padding(.horizontal)
+            .overlay {
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(.feso, lineWidth: 2)
+            }
+            
         }
         .padding()
     }
