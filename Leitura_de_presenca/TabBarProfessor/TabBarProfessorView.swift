@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct TabBarProfessorView: View {
+       
+    
     var body: some View {
         TabView {
-            TurmasView()
+            AdicionarTurmaView()
                 .tabItem {
                     Image(systemName: "person.3")
                     Text("Turmas")
                 }
-            
             AulaProfessorView()
                 .tabItem {
                     Image(systemName: "graduationcap")
