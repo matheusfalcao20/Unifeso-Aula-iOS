@@ -6,6 +6,7 @@
 //
 
 import Foundation
+<<<<<<< HEAD
 import Alamofire
 import UIKit
 
@@ -23,10 +24,46 @@ class API_Aluno {
 
         let headers = HTTPHeaders()
 
+=======
+import UIKit
+import Alamofire
+
+class API {
+
+    static let host = "https://unifesoios.noclaf.com.br/"
+    
+    static let getUser = "core/list-my-classes/"
+    
+    static let auth = "core/auth-user/"
+    
+    //------------------------- Singleton -----------------------------
+
+    static let sharedInstance = API()
+
+    var sessionManager: Session!
+
+    /* *********************************************************************************
+     **
+     **  MARK: Init
+     **
+     ***********************************************************************************/
+
+    fileprivate init() {
+
+        _ = Locale.preferredLanguages[0] as String
+
+        //---------------------- Default Header ----------------------------
+
+        let headers = HTTPHeaders()
+
+        //----------------------- URLSessionConfiguration ---------------------
+
+>>>>>>> 4778bed (Helo iza)
         let configuration = URLSessionConfiguration.default
 
         configuration.headers = headers
 
+<<<<<<< HEAD
         sessionManager = Alamofire.Session(configuration: configuration)
 
     }
@@ -49,8 +86,17 @@ class API_Professor {
         let configuration = URLSessionConfiguration.default
 
         configuration.headers = headers
+=======
+        //----------------------- Session Manager -----------------------------
+>>>>>>> 4778bed (Helo iza)
 
         sessionManager = Alamofire.Session(configuration: configuration)
 
     }
+<<<<<<< HEAD
 }
+=======
+
+}
+
+>>>>>>> 4778bed (Helo iza)

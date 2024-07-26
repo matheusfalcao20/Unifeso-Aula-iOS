@@ -7,6 +7,7 @@
 import Foundation
 
 class User {
+<<<<<<< HEAD
     var id: Int = -1
     
     var ProfileImage: String = ""
@@ -21,3 +22,31 @@ class User {
     
     var password: String = ""
 }
+=======
+    
+    var id : Int = -1
+    
+    var ProfileImage : String = ""
+    
+    var lastLogin : String = ""
+        
+    var email : String = ""
+    
+    var name : String = ""
+    
+    var isAdmin : Bool = false
+    
+    var isActive : Bool = false
+    
+    var isDeleted : Bool = false
+    
+    var forgotPasswordHash : String = ""
+    
+    var forgotPasswordExpire : String = ""
+    
+    var createdAt : String = ""
+        
+    var updatedAt : String = ""
+}
+
+>>>>>>> 4778bed (Helo iza)

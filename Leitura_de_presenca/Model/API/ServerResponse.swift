@@ -19,3 +19,7 @@ class ServerResponse {
     }
     
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4778bed (Helo iza)

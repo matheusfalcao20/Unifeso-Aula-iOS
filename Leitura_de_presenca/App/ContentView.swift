@@ -18,6 +18,7 @@ struct ContentView: View {
     @State private var error: String = ""
     
     var body: some View {
+<<<<<<< HEAD
         NavigationStack {
             ZStack {
                 VStack {
@@ -166,6 +167,13 @@ struct ContentView: View {
                     alertMode = true
                 }
             }
+=======
+        VStack {
+         AdicionarTurmaView()
+        // TabBarProfessorView()
+        
+        
+>>>>>>> 4778bed (Helo iza)
         }
     }
 }

@@ -45,6 +45,13 @@ class DAOUser {
             item.ProfileImage = info
         }
         
+<<<<<<< HEAD
+=======
+        if let info = JSON["last_login"] as? String {
+            item.lastLogin = info
+        }
+        
+>>>>>>> 4778bed (Helo iza)
         if let info = JSON["email"] as? String {
             item.email = info
         }
@@ -53,6 +60,7 @@ class DAOUser {
             item.name = info
         }
         
+<<<<<<< HEAD
         if let info = JSON["registration"] as? String {
             item.registration = info
         }
@@ -64,4 +72,40 @@ class DAOUser {
         return item
         
     }
+=======
+        if let info = JSON["is_admin"] as? Bool {
+            item.isAdmin = info
+        }
+        
+        if let info = JSON["is_active"] as? Bool {
+            item.isActive = info
+        }
+        
+        if let info = JSON["is_deleted"] as? Bool {
+            item.isDeleted = info
+        }
+        
+        if let info = JSON["forgot_password_hash"] as? String {
+            item.forgotPasswordHash = info
+        }
+        
+        if let info = JSON["forgot_password_expire"] as? String {
+            item.forgotPasswordExpire = info
+        }
+        
+        if let info = JSON["created_at"] as? String {
+            item.createdAt = info
+        }
+        
+        if let info = JSON["updated_at"] as? String {
+            item.updatedAt = info
+        }
+        
+        
+        
+        return item
+        
+    }
+    
+>>>>>>> 4778bed (Helo iza)
 }

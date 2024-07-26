@@ -14,13 +14,18 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>2</integer>
+=======
+			<integer>5</integer>
+>>>>>>> 4778bed (Helo iza)
 		</dict>
 		<key>Playground-Mac (Playground) 2.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>3</integer>
 		</dict>
 		<key>Playground-Mac (Playground) 3.xcscheme</key>
@@ -64,26 +69,38 @@
 			<false/>
 			<key>orderHint</key>
 			<integer>15</integer>
+=======
+			<integer>6</integer>
+>>>>>>> 4778bed (Helo iza)
 		</dict>
 		<key>Playground-Mac (Playground).xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>1</integer>
+=======
+			<integer>4</integer>
+>>>>>>> 4778bed (Helo iza)
 		</dict>
 		<key>Playground-iOS (Playground) 1.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>5</integer>
+=======
+			<integer>2</integer>
+>>>>>>> 4778bed (Helo iza)
 		</dict>
 		<key>Playground-iOS (Playground) 2.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>6</integer>
 		</dict>
 		<key>Playground-iOS (Playground) 3.xcscheme</key>
@@ -127,13 +144,20 @@
 			<false/>
 			<key>orderHint</key>
 			<integer>18</integer>
+=======
+			<integer>3</integer>
+>>>>>>> 4778bed (Helo iza)
 		</dict>
 		<key>Playground-iOS (Playground).xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>4</integer>
+=======
+			<integer>0</integer>
+>>>>>>> 4778bed (Helo iza)
 		</dict>
 	</dict>
 </dict>

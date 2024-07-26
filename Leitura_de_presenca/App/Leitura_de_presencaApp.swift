@@ -12,6 +12,7 @@ struct Leitura_de_presencaApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+            
         }
     }
 }

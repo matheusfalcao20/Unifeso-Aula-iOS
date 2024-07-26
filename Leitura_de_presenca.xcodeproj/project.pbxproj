@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		6B5F1F3A2C4C4122008EA1F2 /* ClassroumCardUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5F1F392C4C4122008EA1F2 /* ClassroumCardUIView.swift */; };
 		6B5F1F3D2C4C4738008EA1F2 /* ListClassrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5F1F3C2C4C4738008EA1F2 /* ListClassrom.swift */; };
 		6B5F1F3F2C4C4E82008EA1F2 /* Fab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5F1F3E2C4C4E82008EA1F2 /* Fab.swift */; };
@@ -19,6 +20,10 @@
 		6BBBCF102C4C1E23003447AC /* DataScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBBCF0F2C4C1E23003447AC /* DataScanner.swift */; };
 		6BBBCF142C4C2637003447AC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6BBBCF132C4C2637003447AC /* Alamofire */; };
 		6BBBCF172C4C269C003447AC /* ListClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBBCF162C4C269C003447AC /* ListClasses.swift */; };
+=======
+		6B37D7E22C4C1DA7003CADC6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6B37D7E12C4C1DA7003CADC6 /* Alamofire */; };
+		6B37D7E52C4C1DCA003CADC6 /* SwiftHash in Frameworks */ = {isa = PBXBuildFile; productRef = 6B37D7E42C4C1DCA003CADC6 /* SwiftHash */; };
+>>>>>>> 4778bed (Helo iza)
 		9F3E657B2C4B3F6D00ABA542 /* Leitura_de_presencaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3E657A2C4B3F6D00ABA542 /* Leitura_de_presencaApp.swift */; };
 		9F3E657D2C4B3F6D00ABA542 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3E657C2C4B3F6D00ABA542 /* ContentView.swift */; };
 		9F3E657F2C4B3F6F00ABA542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F3E657E2C4B3F6F00ABA542 /* Assets.xcassets */; };
@@ -116,8 +121,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				6BA934232C54104E00FC0F13 /* SwiftHash in Frameworks */,
 				6BBBCF142C4C2637003447AC /* Alamofire in Frameworks */,
+=======
+				6B37D7E52C4C1DCA003CADC6 /* SwiftHash in Frameworks */,
+				6B37D7E22C4C1DA7003CADC6 /* Alamofire in Frameworks */,
+>>>>>>> 4778bed (Helo iza)
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,8 +405,13 @@
 			);
 			name = Leitura_de_presenca;
 			packageProductDependencies = (
+<<<<<<< HEAD
 				6BBBCF132C4C2637003447AC /* Alamofire */,
 				6BA934222C54104E00FC0F13 /* SwiftHash */,
+=======
+				6B37D7E12C4C1DA7003CADC6 /* Alamofire */,
+				6B37D7E42C4C1DCA003CADC6 /* SwiftHash */,
+>>>>>>> 4778bed (Helo iza)
 			);
 			productName = Leitura_de_presenca;
 			productReference = 9F3E65772C4B3F6D00ABA542 /* Leitura_de_presenca.app */;
@@ -471,8 +486,13 @@
 			);
 			mainGroup = 9F3E656E2C4B3F6D00ABA542;
 			packageReferences = (
+<<<<<<< HEAD
 				6BBBCF122C4C2637003447AC /* XCRemoteSwiftPackageReference "Alamofire" */,
 				6BA934212C54104E00FC0F13 /* XCRemoteSwiftPackageReference "SwiftHash" */,
+=======
+				6B37D7E02C4C1DA7003CADC6 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				6B37D7E32C4C1DCA003CADC6 /* XCRemoteSwiftPackageReference "SwiftHash" */,
+>>>>>>> 4778bed (Helo iza)
 			);
 			productRefGroup = 9F3E65782C4B3F6D00ABA542 /* Products */;
 			projectDirPath = "";
@@ -886,6 +906,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+<<<<<<< HEAD
 		6BA934212C54104E00FC0F13 /* XCRemoteSwiftPackageReference "SwiftHash" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onmyway133/SwiftHash";
@@ -895,6 +916,9 @@
 			};
 		};
 		6BBBCF122C4C2637003447AC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+=======
+		6B37D7E02C4C1DA7003CADC6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+>>>>>>> 4778bed (Helo iza)
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
 			requirement = {
@@ -902,6 +926,7 @@
 				minimumVersion = 5.9.1;
 			};
 		};
+<<<<<<< HEAD
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -915,6 +940,29 @@
 			package = 6BBBCF122C4C2637003447AC /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
+=======
+		6B37D7E32C4C1DCA003CADC6 /* XCRemoteSwiftPackageReference "SwiftHash" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onmyway133/SwiftHash";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6B37D7E12C4C1DA7003CADC6 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B37D7E02C4C1DA7003CADC6 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		6B37D7E42C4C1DCA003CADC6 /* SwiftHash */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B37D7E32C4C1DCA003CADC6 /* XCRemoteSwiftPackageReference "SwiftHash" */;
+			productName = SwiftHash;
+		};
+>>>>>>> 4778bed (Helo iza)
 /* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9F3E656F2C4B3F6D00ABA542 /* Project object */;
