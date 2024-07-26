@@ -10,13 +10,14 @@ import PhotosUI
 
 struct PerfilView: View {
     
-    @State private var matricula: String = ""
-    @State private var email: String = ""
+    @State private var matricula: String = LoggedUser.sharedInstance.user.registration
+    @State private var email: String = LoggedUser.sharedInstance.user.email
     @State private var alertMessage = ""
     @State private var isLoading = false
     @State private var nextScreen = false
-    @State private var pickerItem: PhotosPickerItem? // item opcional que você usa com um seletor de fotos
-    @State private var selectedImage: Image? // exibe uma imagem
+    @State private var pickerItem: PhotosPickerItem?
+    @State private var selectedImage: Image?
+    @State private var alertMode = false
     
     var body: some View {
         NavigationStack {
@@ -24,8 +25,9 @@ struct PerfilView: View {
                 selectedImage?
                     .resizable()
                     .scaledToFit()
-                    .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                     .frame(width: 150)
+                    .clipShape(Circle())
+                    // .rotationEffect(Angle(degrees: 180))
                 
                 Button {
                     
@@ -34,28 +36,48 @@ struct PerfilView: View {
                     PhotosPicker("Selecionar foto", selection: $pickerItem, matching: .images)
                         .foregroundStyle(.gray).font(.footnote).padding(.top, 10)
                 }
-                .onChange(of: pickerItem) { // dispara um efeito colateral quando um valor muda
+                .onChange(of: pickerItem) {
                     Task {
                         selectedImage = try await pickerItem?.loadTransferable(type: Image.self)
                     }
                 }
                 
-                Text(LoggedUser.sharedInstance.user.name) // 
+                Text(LoggedUser.sharedInstance.user.name)
                     .font(.footnote)
                     .padding(.vertical, 30)
                 
                 HStack {
-                    CustomTextField(placeholder: "matrícula", padding: 10, text: $matricula, textColor: .gray, borderColor: Color(red: 18/255, green: 126/255, blue: 113/255), frameWidht: 300, frameHeight: 40)
+                    Text(matricula)
+                        .padding(10).frame(width: 300, height: 40, alignment: .leading).foregroundColor(.gray)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 17)
+                            .stroke(Color(red: 18/255, green: 126/255, blue: 113/255), lineWidth: 2)
+                        )
                     
                     Button {
+                        alertMode = true
                     } label: {
                         Image(systemName: "lock")
                             .foregroundColor(.black)
                     }
+                    
+                    .alert(isPresented: $alertMode) {
+                        Alert(
+                            title: Text("Campo privado"),
+                            message: Text("Não é possível mudar o número da matrícula"),
+                            dismissButton: .default(Text("Ok"))
+                        )
+                    }
                 }
                 
+                
                 HStack {
-                    CustomTextField(placeholder: "email", padding: 10, text: $email, textColor: .gray, borderColor: Color(red: 18/255, green: 126/255, blue: 113/255), frameWidht: 300, frameHeight: 40)
+                    Text(email)
+                        .padding(10).frame(width: 300, height: 40, alignment: .leading).foregroundColor(.gray)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 17)
+                            .stroke(Color(red: 18/255, green: 126/255, blue: 113/255), lineWidth: 2)
+                        )
                     
                     Button {
                         
@@ -63,10 +85,13 @@ struct PerfilView: View {
                         Image(systemName: "square.and.pencil")
                             .foregroundColor(.black)
                     }
+                    
+                    // criar a mudança de email
                 }
                 .padding(.vertical, 20)
 
-                NavigationLink(destination: TabBarAlunoView()) {
+                NavigationLink(destination: EmptyView()) {                     // changePassword()
+
                     Text("Alterar senha").underline().foregroundStyle(.gray).font(.footnote)
                 }
                 
@@ -92,6 +117,7 @@ struct PerfilView: View {
             }
         }
     }
+
 }
 
 #Preview {

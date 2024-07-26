@@ -18,4 +18,6 @@ class User {
     var registration: String = ""
     
     var birthday: String = ""
+    
+    var password: String = ""
 }
