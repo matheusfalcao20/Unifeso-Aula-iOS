@@ -13,9 +13,13 @@ struct CustomTextField: View {
     var padding: Double
     @Binding var text: String
     var textColor : Color
+    var textFieldColor : Color
     var borderColor : Color
     var frameWidht : Double
     var frameHeight : Double
+    var cornerRadius : Double
+    var lineWidth : Double
+    var alignment : Alignment
     
     var body: some View {
         ZStack(alignment: .leading) {
@@ -25,13 +29,13 @@ struct CustomTextField: View {
                     .padding(.horizontal, padding)
             }
             TextField("", text: $text)
-                .foregroundColor(Color(textColor))
+                .foregroundColor(Color(textFieldColor))
                 .padding(.horizontal, padding)
         }
-        .frame(width: frameWidht, height: frameHeight)
+        .frame(width: frameWidht, height: frameHeight, alignment: alignment)
         .overlay {
-            RoundedRectangle(cornerRadius: 17)
-                .stroke(Color(borderColor), lineWidth: 2)
+            RoundedRectangle(cornerRadius: cornerRadius)
+                .stroke(Color(borderColor), lineWidth: lineWidth)
         }
     }
 }

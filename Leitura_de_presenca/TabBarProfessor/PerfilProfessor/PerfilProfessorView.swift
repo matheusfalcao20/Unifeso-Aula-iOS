@@ -103,7 +103,7 @@ struct ChangePassword: View {
     
     var body: some View {
         VStack {
-            CustomTextField(placeholder: "Email", padding: 10, text: $email, textColor: .gray, borderColor: Color(red: 18/255, green: 126/255, blue: 113/255), frameWidht: 300, frameHeight: 40)
+            CustomTextField(placeholder: "Email", padding: 10, text: $email, textColor: .gray, textFieldColor: .black, borderColor: Color(red: 18/255, green: 126/255, blue: 113/255), frameWidht: 300, frameHeight: 40, cornerRadius: 12, lineWidth: 1, alignment: .center)
         }
     }
 }

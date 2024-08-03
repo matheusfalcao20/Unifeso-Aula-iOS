@@ -9,48 +9,60 @@ import Foundation
 import Alamofire
 import UIKit
 
-class API_Aluno {
+class API {
+
+    static let host = "https://unifesoios.noclaf.com.br/"
     
-    static let getUser = "https://unifesoios.noclaf.com.br/core/get-user/"
+    static let authStudent = "core/auth-student/"
     
-    static let auth = "https://unifesoios.noclaf.com.br/core/auth-student/"
+    static let authTeacher = "core/auth-teacher/"
     
-    static let sharedInstance = API_Aluno()
+    static let getUser = "core/get-user/"
+    
+    static let listStudentLessons = "core/list-my-student-lessons/"
+    
+    static let readQrCode = "core/read-code-and-present-lesson/"
+    
+    static let listClasses = "core/list-my-classes/"
+    
+    static let listTeacherLessons = "core/list-lessons/"
+    
+    static let creatLesson = "core/create-lesson/"
+    
+    static let creatClass = "core/create-class/"
+    
+    static let addStudent = "core/add-student-class/"
+    
+    //------------------------- Singleton -----------------------------
+
+    static let sharedInstance = API()
 
     var sessionManager: Session!
-    
+
+    /* *********************************************************************************
+     **
+     **  MARK: Init
+     **
+     ***********************************************************************************/
+
     fileprivate init() {
 
+        _ = Locale.preferredLanguages[0] as String
+
+        //---------------------- Default Header ----------------------------
+
         let headers = HTTPHeaders()
+
+        //----------------------- URLSessionConfiguration ---------------------
 
         let configuration = URLSessionConfiguration.default
 
         configuration.headers = headers
 
-        sessionManager = Alamofire.Session(configuration: configuration)
-
-    }
-}
-
-class API_Professor {
-    
-    static let getUser = "https://unifesoios.noclaf.com.br/core/get-user/"
-    
-    static let auth = "https://unifesoios.noclaf.com.br/core/auth-teacher/"
-    
-    static let sharedInstance = API_Professor()
-
-    var sessionManager: Session!
-    
-    fileprivate init() {
-
-        let headers = HTTPHeaders()
-
-        let configuration = URLSessionConfiguration.default
-
-        configuration.headers = headers
+        //----------------------- Session Manager -----------------------------
 
         sessionManager = Alamofire.Session(configuration: configuration)
 
     }
+
 }

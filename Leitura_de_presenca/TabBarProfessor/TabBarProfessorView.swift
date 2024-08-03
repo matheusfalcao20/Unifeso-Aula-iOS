@@ -12,12 +12,12 @@ struct TabBarProfessorView: View {
     
     var body: some View {
         TabView {
-            AdicionarTurmaView()
+            ListClassView()
                 .tabItem {
                     Image(systemName: "person.3")
                     Text("Turmas")
                 }
-            AulaProfessorView()
+            TurmasView()
                 .tabItem {
                     Image(systemName: "graduationcap")
                     Text("Aulas")
@@ -29,6 +29,7 @@ struct TabBarProfessorView: View {
                     Text("Perfil")
                 }
         }
+        .navigationBarBackButtonHidden()
     }
 }
 

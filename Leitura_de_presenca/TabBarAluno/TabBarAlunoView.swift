@@ -22,6 +22,7 @@ struct TabBarAlunoView: View {
                     Text("Perfil")
                 }
         }
+        .navigationBarBackButtonHidden()
     }
 }
 

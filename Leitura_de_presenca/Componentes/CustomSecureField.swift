@@ -8,28 +8,34 @@
 import SwiftUI
 
 struct CustomSecureField: View {
+    
     var placeholder: String
+    var padding: Double
     @Binding var text: String
-    var textColor : UIColor
-    var borderColor : UIColor
+    var textColor : Color
+    var textFieldColor : Color
+    var borderColor : Color
     var frameWidht : Double
     var frameHeight : Double
+    var cornerRadius : Double
+    var lineWidth : Double
+    var alignment : Alignment
     
     var body: some View {
         ZStack(alignment: .leading) {
             if text.isEmpty {
                 Text(placeholder)
                     .foregroundColor(Color(textColor))
-                    .padding(.horizontal, 12)
+                    .padding(.horizontal, padding)
             }
             SecureField("", text: $text)
-                .foregroundColor(Color(textColor))
-                .padding(.leading, 12)
+                .foregroundColor(Color(textFieldColor))
+                .padding(.leading, padding)
         }
         .frame(width: frameWidht, height: frameHeight)
         .overlay {
-            RoundedRectangle(cornerRadius: 17)
-                .stroke(Color(borderColor), lineWidth: 2)
+            RoundedRectangle(cornerRadius: cornerRadius)
+                .stroke(Color(borderColor), lineWidth: lineWidth)
         }
     }
 }
